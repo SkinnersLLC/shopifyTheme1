@@ -1,6 +1,11 @@
 .mega-menu {
   position: static;
 }
+
+.test{
+  display:none;
+}
+
 .mega-menu__content-container{
     background-color: rgb(var(--color-background));
     margin: 0 auto;

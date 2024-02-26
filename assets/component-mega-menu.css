@@ -1,0 +1,194 @@
+.mega-menu {
+  position: static;
+}
+.mega-menu__content-container{
+    background-color: rgb(var(--color-background));
+    margin: 0 auto;
+    padding: 0px;
+    width: 1100px;
+    height: 100%;
+    padding-top: 3rem;
+    overflow-x: auto;
+  }
+
+.mega-menu__content {
+  background-color: transparent;
+  border-left: 0;
+  border-radius: 0;
+  border-right: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 100%;
+}
+
+.shopify-section-header-sticky .mega-menu__content {
+  max-height: calc(100vh - var(--header-bottom-position-desktop, 20rem) - 4rem);
+}
+
+.header-wrapper--border-bottom .mega-menu__content {
+  border-top: 0;
+}
+
+.js .mega-menu__content {
+  opacity: 0;
+  transform: translateY(-1.5rem);
+}
+
+.mega-menu[open] .mega-menu__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mega-menu__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1.8rem; /* Přidání mezery mezi obrázky */
+  
+}
+
+.mega-menu__link {
+  color: rgba(var(--color-foreground), 0.75);
+  display: block;
+  line-height: calc(1 + 0.3 / var(--font-body-scale));
+  padding-bottom: 0.6rem;
+  text-decoration: none;
+  transition: text-decoration var(--duration-short) ease;
+  word-wrap: break-word;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.mega-menu__link--level-2 {
+  font-weight: normal;
+}
+
+.header--top-center .mega-menu__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 0;
+}
+
+.header--top-center .mega-menu__list > li {
+  width: 16%;
+  padding-right: 1.4rem;
+  
+}
+.mega-menu__link:hover,
+.mega-menu__link--active {
+  color:  F2F2F2;
+ 
+  background-color: rgb(200, 207, 207); /* Světlejší verze barvy s vyššími hodnotami každého kanálu */
+
+
+
+}
+
+
+
+
+
+.mega-menu__product-item{
+  list-style-type: none;
+}
+
+.mega-menu__product{
+  display: inline-flex !important;
+  width: 200px;
+    background-color: rgb(243,243,243);
+ /* Světlejší verze barvy s vyššími hodnotami každého kanálu */
+
+
+
+  justify-content: center;
+  border-radius: 5px;
+}
+
+
+.mega-menu__product-title{
+  margin: 5px auto 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: black;
+}
+
+.mega-menu__product img{
+  width: 178px;
+  height: 178px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px; 
+}
+
+.mega-menu__product-shortDescription{
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px; 
+  color: black;
+}
+
+.mega-menu .mega-menu__list--condensed {
+ /* display: block; */
+}
+
+.mega-menu__list--condensed .mega-menu__link {
+  font-weight: normal;
+}
+
+.nazev-kolekce {
+  /* Zde definujte vlastní styly */
+  /* Například změna barvy textu */
+  color: black;
+    font-weight: normal;
+  text-decoration: none!important;
+  /* Další vlastnosti stylu podle potřeby */
+}
+
+
+/* Adjust the alignment and spacing for product items in the mega-menu */
+.mega-menu__list {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 2px; /* Reduce the spacing between items */
+   /* Increase left padding */
+  justify-content: flex-start; /* Align items to the center horizontally */
+}
+
+.mega-menu__product-item {
+  flex: 0 0 auto;/* Dynamically adjust the width of items */
+  padding-right: 20px;
+  max-width: calc(33.33% - 4px); /* Optionally, set the maximum width of each item */
+}
+
+/* Optionally, you can remove specific styles for product items */
+.mega-menu__product {
+  /* No specific styles needed if you want items aligned to the center */
+}
+
+.mega-menu__product-item:nth-child(4) {
+  margin-top: 223px; /* Zde nastavte požadovaný odstup */
+  margin-right:0px!important;
+}
+
+.mega_menu_all_products_link{
+  color: black;
+  font-weight: semi-bold;
+}
+
+.mega_menu_all_products_link:hover{
+   font-weight: bold!important;
+  
+}
+
+.menu-footer-link{
+  display: flex;
+  padding-right: 20px;
+  padding-bottom: 1.3rem;
+  justify-content: flex-end;
+}
